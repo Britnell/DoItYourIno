@@ -12,4 +12,4 @@ This is a blink example for Fabduino
 1.  Try varying the delay time to see the effect
 2.  and replace the delay time (in the delay(...) function) with the 'wait' variable
 3. Try using '#define' to replace 0 and 1 with LED_ON and LED_OFF
-
+4. Try using a mathematical function to increase the value of the wait variable each iteration of the loop

@@ -13,16 +13,24 @@ void setup() {
   
 }
 
-int wait = 500;
+int wait = 200;
 
 // the loop function runs over and over again forever
 void loop() {
   
+  digitalWrite(led_pin, 0); // 0 or LOW = 0V switches the LED ON
+  // Also correct: 
+  //  digitalWrite(5, 0);
+  //  digitalWrite(led_pin, LOW);
   
-  digitalWrite(led_pin, 0); // 0 or LOW switches the LED ON
-  delay(300);
+  delay(500);
   // Delay creates a 1000ms = 1s delay before executing the next line of code
-  digitalWrite(led_pin, 1); // 1 or HIGH switches the LED OFF
-  delay(300); 
+    
+  digitalWrite(led_pin, 1); // 1 or HIGH = 5V switches the LED OFF
+  // Also correct:
+  //  digitalWrite(5, 1);
+  //  digitalWrite(led_pin, HIGH);
+  
+  delay(500); 
   
 }

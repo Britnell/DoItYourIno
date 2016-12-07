@@ -14,17 +14,34 @@ void setup() {
   pinMode(led_pin, OUTPUT);
   analogWrite(led_pin, fading);
   
+  /*  AnalogWrite : int value
+   *   the value is a % between 0 and 100
+   *   
+   *   0 = 0% or always OFF
+   *  As the LED is ACTIVE LOW, this will mean it is ON
+   *  
+   *  255 = 100% or always ON
+   *  As the LED is ACTIVE LOW, this will mean it is OFF
+   *  
+   */
+  
 }
 
 void loop() {
-  fading += 2;
+  // Decrease brightness
+  fading = fading + 2;
 
+  // Make sure it does not exceed maximum of 100% (255)
   if(fading >= 255)
   {
+    // When it does, start agian at 0
     fading = 0;
   }
-  
-  analogWrite(led_pin, fading); // 1 or HIGH switches the LED OFF
+
+  // Set new value as output
+  analogWrite(led_pin, fading);
+
+  // delay 50ms as else far too quick...
   delay(50); 
   
 }
