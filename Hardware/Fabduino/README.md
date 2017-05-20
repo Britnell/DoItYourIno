@@ -32,13 +32,18 @@ The FabIsp is a great kit that lets you make your own USB-ISP programmer from AT
 
 Check out their documentation here:
 
-1. [FabIsp](http://fab.cba.mit.edu/content/projects/fabisp/) - The first design this has best documentation for programming and 
+1. [FabIsp](http://fab.cba.mit.edu/content/projects/fabisp/) - The first design this has best documentation for programming
 2. [FabIsp Key](http://fab.cba.mit.edu/content/projects/fabispkey/index.html) - A sleep improvement on the design, making it smaller and using the PCB mill to create a USB plug
 
 If you just want to use the FabIsp, you will need the USB-driver.
+
+### Linux
+In Linux you dont need to install any drivers for the FabIsp!
+
+### Windows Driver
 For the workshops we installed the driver on many machines and for all 64-Bit Windows 7 and newer, these fixed drivers worked:
 
-The fix is by [MightOhm](http://mightyohm.com/blog/2010/09/fixed-usbtinyisp-drivers-for-64-bit-windows-7/), here the website. What you need is the 
+The fix is by [MightyOhm](http://mightyohm.com/blog/2010/09/fixed-usbtinyisp-drivers-for-64-bit-windows-7/), here the website. What you need is the 
 [usbtinyisp_libusb-win32_1.2.1.0](http://mightyohm.com/blog/wp-content/uploads/2010/09/usbtinyisp_libusb-win32_1.2.1.0.zip)
 
 Just download the zip file, unzip ip, plug in FabIsp and point the driver installation at the folder.
